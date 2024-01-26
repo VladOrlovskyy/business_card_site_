@@ -30,12 +30,12 @@ h2 {
 
 h2::after {
     content: '}';
-    color: #42f5bf;
+    color: #9ACD32
 }
 
 h2::before {
     content: '{';
-    color: #42f5bf;
+    color: #9ACD32
 }
 
 h3 {
@@ -58,7 +58,7 @@ h3 {
 }
 
 .button-up a i {
-    color: #00FF75;
+    color: #9ACD32;
     font-size: 30px;
     transition: 200ms;
 }
@@ -139,16 +139,16 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 570px;
-    height: 350px;
+    width: 650px;
+    height: 300px;
     background: radial-gradient(farthest-corner at 40px 40px, rgba(165, 239, 255, 0.2) 0%, rgba(110, 191, 244, 0.1) 50%, rgba(70, 144, 213, 0) 100%);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(14px);
-    /* Для кроссбраузерности */
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(60px);
+
+    -webkit-backdrop-filter: blur(14px); /* For cross-browser compatibility */
     -moz-backdrop-filter: blur(14px);
-    border-radius: 22px;
-    padding-left: 70px;
+
+    padding-left: 80px;
     box-sizing: border-box;
 }
 
@@ -183,19 +183,17 @@ h3 {
     content: '';
     position: absolute;
     width: 660px;
-    height: 400px;
+    height: 450px;
     z-index: -2;
     bottom: 34px;
-    background: linear-gradient(180deg, #00FF75 0%, #00eeff60 90%);
+    background: radial-gradient(farthest-corner at 40px 40px, #1a1aff 0%, #4d4dff 40%, #ff4d4d 100%);
 }
 
 .first-block__image img {
     width: 100%;
 }
 
-.section > p {
-    padding-top: 80px;
-}
+
 
 .about__text {
     display: flex;
@@ -241,19 +239,20 @@ table {
 }
 
 tr {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid #9ACD32;
 }
 
-tr:hover td{
-    color: #00FF75;
+.click a:hover {
+    text-decoration: underline;
+    color: #9ACD32;
+    font-size: 1.3rem;
 }
 
-tr:hover td a{
-    color: #00FF75;
-}
+
+
 
 th {
-    color: #575757;
+    color: #9ACD32;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -303,7 +302,7 @@ td {
 .skills__item-content p {
     font-weight: 600;
     font-size: 18px;
-    color: #42cfa2
+    color: #9ACD32;
 }
 
 .skills__item-content i{
@@ -321,7 +320,7 @@ td {
 .projects__item {
     display: flex;
     flex-direction: column;
-    width: 460px;
+    width: 450px;
     margin-right: 40px;
 }
 
@@ -331,7 +330,7 @@ td {
 
 .projects__item_image {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
     z-index: 3;
 }
@@ -341,7 +340,7 @@ td {
     position: absolute;
     width: 460px;
     height: 460px;
-    background: linear-gradient(-135deg, #00FF75 0%, #171515 50%);
+    background: linear-gradient(-135deg, #9ACD32 0%, #FF4500 50%);
     left: 10px;
     top: -10px;
     z-index: -1;
@@ -356,7 +355,7 @@ td {
 }
 
 .projects__item button {
-    border: 1px solid #00FF75;
+    border: 1px solid #9ACD32;
     color: #fff;
     transition: 300ms;
     background-color: rgba(0, 255, 117, 0);
@@ -365,13 +364,13 @@ td {
     margin-top: 36px;
     font-weight: 600;
     font-size: 16px;
-    box-shadow: 0px 0px 0px #00eeff;
+    box-shadow: 0px 0px 0px #9ACD32;
 }
 
 .projects__item button:hover {
-    border: 1px solid #00FF75;
-    background-color: #00FF75;
-    box-shadow: 0px 0px 20px #00ff77a2;
+    border: 1px solid #9ACD32;
+    background-color: #9ACD32;
+    box-shadow: 0px 0px 20px #6B8E23;
     color: #000;
 }
 
@@ -397,7 +396,7 @@ input, textarea {
     margin-bottom: 20px;
     color: #fff;
     background-color:rgba(0, 224, 255, 0);
-    border: 1px solid #00FF75;
+    border: 1px solid #9ACD32;
     border-radius: 0;
     padding-left: 15px;
     box-sizing: border-box;
@@ -405,7 +404,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    box-shadow: 0px 0px 10px #00FF75;
+    box-shadow: 0px 0px 10px #9ACD32;
 }
 
 textarea {
@@ -420,14 +419,14 @@ textarea {
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0px 0px 0px #00eeff;
+    box-shadow: 0px 0px 0px #9ACD32;
     color: #fff;
 }
 
 [type="submit"]:hover {
-    border: 1px solid #00FF75;
-    background-color: #00FF75;
-    box-shadow: 0px 0px 20px #00ff77a2;
+    border: 1px solid #9ACD32;
+    background-color: #9ACD32;
+    box-shadow: 0px 0px 20px #6B8E23;
     color: #000;
 }
 
@@ -472,7 +471,7 @@ textarea {
 }
 
 .footer__links_social i {
-    color: #00FF75;
+    color: #9ACD32;
     font-size: 30px;
     transition: 300ms;
 }
@@ -484,7 +483,7 @@ textarea {
 .footer__legal {
     font-weight: 200;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     opacity: 50%;
 }
 
@@ -507,11 +506,11 @@ textarea {
 }
 
 .nav-item a:hover {
-    color: #00FF75;
+    color: #9ACD32;
 }
 
 .nav-item a:hover::after{
     content: '';
-    background-color: rgba(0, 255, 117, 1);
+    background-color: #9ACD32;
     left: 0;
 }
